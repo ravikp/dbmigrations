@@ -15,6 +15,9 @@
             </column>
             <column name="active" type="boolean" defaultValueBoolean="true"/>
         </createTable>
+        <rollback>
+          <dropTable tableName="department"/>
+        </rollback>
     </changeSet>
 
 </databaseChangeLog>
